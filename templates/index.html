@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>datetime</th>
+            <th>client_info</th>
+        </tr>
+        {% for user in users %}
+            <tr>
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
